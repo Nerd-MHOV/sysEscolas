@@ -8,8 +8,7 @@ class HomeController
 {
     public function index()
     {
-        MainView::render('home.php',$arr[
-                'tituloPagina'=> 'Home';
-            ]);
+        $data['tituloPagina'] = 'Painel';
+        MainView::render('home.php',$data);
     }
 }

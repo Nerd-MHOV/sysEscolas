@@ -1,6 +1,6 @@
 <?php
     require __DIR__.'/vendor/autoload.php';
-    use App\Controllers\HomeController;
+    use App\controllers\HomeController;
     use App\Router;
     $homeController = new HomeController();
 
