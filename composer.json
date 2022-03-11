@@ -1,0 +1,25 @@
+{
+  "name": "nerd-mhov/sys_escolas",
+  "description": "Sistema de pagamentos e cadastro, escolas e evendos",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Matheus Henrique de Oliveira Viana",
+      "email": "matheus.henrique4245@gmail.com"
+    }
+  ],
+  "config": {
+    "vendor-dir": "vendor"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "app/Config.php"
+    ]
+  },
+  "require": {
+  }
+}
