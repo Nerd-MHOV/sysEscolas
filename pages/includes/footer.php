@@ -23,7 +23,7 @@
                 this.classList.add('hovered');
             }
             list.forEach((item) =>
-                item.addEventListener('mouseover', activeLink))
+                item.addEventListener('click', activeLink))
         </script>
     </body>
 </html>

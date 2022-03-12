@@ -12,8 +12,27 @@
         <ul>
             <li>
                 <a href="#">
-                    <span class="icon"></span>
-                    <span class="title">Painel SysEscolas</span>
+                    <span class="icon"><i class='bx bxs-cube-alt'></i></span>
+                    <span class="title">SysEscolas</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-home-alt-2' ></i></span>
+                    <span class="title">Dashbord</span>
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-home-alt-2' ></i></span>
+                    <span class="title">Dashbord</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="icon"><i class='bx bx-home-alt-2' ></i></span>
+                    <span class="title">Dashbord</span>
                 </a>
             </li>
             <li>
