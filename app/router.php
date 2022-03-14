@@ -16,14 +16,13 @@ class Router
         if($path =='')
             $path = '/';
         if($url != '/')
-        $url = '/'.$url;
+            $url = '/'.$url;
         if($url[strlen($url)-1] != '/')
-        $url.='/';
+            $url.='/';
         if($path[0] != '/')
             $path = '/'.$path;
         if($path[strlen($path)-1] != '/')
             $path .= '/';
-
         if($url == $path)
         {
             self::$executed = true;

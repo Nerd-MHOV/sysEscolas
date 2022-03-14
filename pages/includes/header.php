@@ -13,37 +13,31 @@
             <li>
                 <a href="#">
                     <span class="icon"><i class='bx bxs-cube-alt'></i></span>
-                    <span class="title">SysEscolas</span>
+                    <span class="title" style="font-size: 22px">SysEscolas</span>
                 </a>
             </li>
-            <li>
-                <a href="#">
+            <li <?php if(str_contains(@$_GET['url'], 'home') || @$_GET['url'] == ''){ echo 'class="hovered"';}?> />
+                <a href="<?=INCLUDE_PATH?>home">
                     <span class="icon"><i class='bx bx-home-alt-2' ></i></span>
-                    <span class="title">Dashbord</span>
+                    <span class="title">Home</span>
+                </a>
+            </li>
+
+            <li <?php if(str_contains(@$_GET['url'], 'escolas')){ echo 'class="hovered"';}?> />
+                <a href="<?=INCLUDE_PATH?>escolas">
+                    <span class="icon"><i class='bx bxs-graduation' ></i></span>
+                    <span class="title">Escolas</span>
+                </a>
+            </li>
+            <li <?php if(str_contains(@$_GET['url'], 'eventos')){ echo 'class="hovered"';}?>>
+                <a href="<?=INCLUDE_PATH?>eventos">
+                    <span class="icon"><i class='bx bx-calendar-event' ></i></span>
+                    <span class="title">Eventos</span>
                 </a>
             </li>
 
             <li>
-                <a href="#">
-                    <span class="icon"><i class='bx bx-home-alt-2' ></i></span>
-                    <span class="title">Dashbord</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class='bx bx-home-alt-2' ></i></span>
-                    <span class="title">Dashbord</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class='bx bx-home-alt-2' ></i></span>
-                    <span class="title">Dashbord</span>
-                </a>
-            </li>
-
-            <li>
-                <a href="#">
+                <a href="?singout=true">
                     <span class="icon"><i class='bx bx-log-out' ></i></span>
                     <span class="title">Sing Out</span>
                 </a>
@@ -56,13 +50,14 @@
 <div class="main">
     <div class="topbar">
         <div class="toggle">
-            <ion-icon name="menu-outline"></ion-icon>
+            <i class='bx bx-menu' ></i>
+<!--            <ion-icon name="menu-outline"></ion-icon>-->
         </div>
         <!-- search -->
         <div class="search">
             <label>
                 <input type="text" placeholder="Search here">
-                <ion-icon name="search-outline"></ion-icon>
+                <i class='bx bx-search' ></i>
             </label>
         </div>
         <!-- userImg -->

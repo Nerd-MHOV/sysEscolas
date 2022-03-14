@@ -5,7 +5,7 @@ namespace App\Services;
 class Painel
 {
     public static $cargos = [
-        '0' => 'Normal',
+        '0' => 'Colaborador',
         '1' => 'Sub Administrador',
         '2' => 'Administrador'
     ];
@@ -68,7 +68,7 @@ class Painel
     {
         setcookie('lembrar', 'true', time() - 1, '/');
         session_destroy();
-        header('location: ' . INCLUDE_PATH_PAINEL);
+        header('location: ' . INCLUDE_PATH);
     }
     public static function listarUsuariosOnline()
     {

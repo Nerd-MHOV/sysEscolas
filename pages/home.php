@@ -3,7 +3,7 @@
     <div class="card">
         <div>
             <div class="numbers">1,504</div>
-            <div class="cardName">Daily Views</div>
+            <div class="cardName">Acessos de Hoje</div>
         </div>
         <div class="iconBx">
             <ion-icon name="eye-outline"></ion-icon>
@@ -42,7 +42,7 @@
     <!-- order details list-->
     <div class="recentOrders">
         <div class="cardHeader">
-            <h2>Recent Orders</h2>
+            <h2>Pagamentos Recentes</h2>
             <a href="#" class="btn">View All</a>
         </div>
         <table>
@@ -86,7 +86,7 @@
     <!-- New Customers -->
     <div class="recentCustomers">
         <div class="cardHeader">
-            <h2>Recent Customers</h2>
+            <h2>Próximos Eventos</h2>
         </div>
         <table>
             <tr>
