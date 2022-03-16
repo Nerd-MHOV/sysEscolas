@@ -17,8 +17,16 @@ abstract class Controller
     public function __construct($router)
     {
         $this->router = $router;
-        $this->view = Engine::setDirectory(dirname(__DIR__,2)."/views");
+        $this->view = new Engine(dirname(__DIR__,2)."/views");
         $this->view->addData(["router" => $this->router]);
 
+        $this->seo = new Optimizer();
+        $this->seo->openGraph(site('name'), site('locale'), 'article');
+    }
+
+    public function ajaxResponse(string $param, array $values): string
+    {
+
+        return json_encode([$param => $values]);
     }
 }
