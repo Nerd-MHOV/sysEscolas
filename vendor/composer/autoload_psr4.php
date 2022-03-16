@@ -6,5 +6,11 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'MatthiasMullie\\PathConverter\\' => array($vendorDir . '/matthiasmullie/path-converter/src'),
+    'MatthiasMullie\\Minify\\' => array($vendorDir . '/matthiasmullie/minify/src'),
+    'League\\Plates\\' => array($vendorDir . '/league/plates/src'),
+    'CoffeeCode\\Router\\' => array($vendorDir . '/coffeecode/router/src'),
+    'CoffeeCode\\Optimizer\\' => array($vendorDir . '/coffeecode/optimizer/src'),
+    'CoffeeCode\\DataLayer\\' => array($vendorDir . '/coffeecode/datalayer/src'),
     'App\\' => array($baseDir . '/app'),
 );

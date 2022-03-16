@@ -13,7 +13,7 @@
 		if(isset($_POST['ação'])){
 			$user = $_POST['user'];
 			$password = $_POST['password'];
-			$sql = App\Services\MySql::connect()->prepare("SELECT * FROM `tb_admin.users` WHERE login = ? AND senha = ?");
+			$sql = App\Support\MySql::connect()->prepare("SELECT * FROM `tb_admin.users` WHERE login = ? AND senha = ?");
 			$sql->execute(array($user,$password));
 			if($sql->rowCount() == 1){
 				$info = $sql->fetch();
@@ -24,7 +24,7 @@
 				$_SESSION['cargo'] = $info['nivel'];
 				$_SESSION['nome'] = $info['nome'];
 				$_SESSION['id_user'] = $info['id'];
-				App\Services\Painel::redirect(INCLUDE_PATH);
+				App\Support\Painel::redirect(INCLUDE_PATH);
 			}else{
 			//Falhou
 				echo '<div class="erro-box">Usuario ou senha incorretos!</div>';

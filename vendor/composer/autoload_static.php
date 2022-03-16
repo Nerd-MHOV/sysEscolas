@@ -8,9 +8,25 @@ class ComposerStaticInitadd96686bc2265a2ce28b706a0c7429d
 {
     public static $files = array (
         '4c3a006825742ac9efd4294b7c47931b' => __DIR__ . '/../..' . '/app/Config.php',
+        'bf93043adb47b4553aab98990900bc48' => __DIR__ . '/../..' . '/app/Helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'M' => 
+        array (
+            'MatthiasMullie\\PathConverter\\' => 29,
+            'MatthiasMullie\\Minify\\' => 22,
+        ),
+        'L' => 
+        array (
+            'League\\Plates\\' => 14,
+        ),
+        'C' => 
+        array (
+            'CoffeeCode\\Router\\' => 18,
+            'CoffeeCode\\Optimizer\\' => 21,
+            'CoffeeCode\\DataLayer\\' => 21,
+        ),
         'A' => 
         array (
             'App\\' => 4,
@@ -18,6 +34,30 @@ class ComposerStaticInitadd96686bc2265a2ce28b706a0c7429d
     );
 
     public static $prefixDirsPsr4 = array (
+        'MatthiasMullie\\PathConverter\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/matthiasmullie/path-converter/src',
+        ),
+        'MatthiasMullie\\Minify\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/matthiasmullie/minify/src',
+        ),
+        'League\\Plates\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/league/plates/src',
+        ),
+        'CoffeeCode\\Router\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/coffeecode/router/src',
+        ),
+        'CoffeeCode\\Optimizer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/coffeecode/optimizer/src',
+        ),
+        'CoffeeCode\\DataLayer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/coffeecode/datalayer/src',
+        ),
         'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app',

@@ -87,6 +87,7 @@
     <div class="recentCustomers">
         <div class="cardHeader">
             <h2>Próximos Eventos</h2>
+            <a href="#" class="btn">View All</a>
         </div>
         <table>
             <tr>

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Views;
-use App\Services\Painel;
+use App\Support\Painel;
 
 class MainView
 {

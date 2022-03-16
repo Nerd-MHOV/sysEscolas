@@ -1,6 +1,6 @@
 {
   "name": "nerd-mhov/sys_escolas",
-  "description": "Sistema de pagamentos e cadastro, escolas e evendos",
+  "description": "Sistema de pagamentos e cadastro para escolas e evendos",
   "minimum-stability": "stable",
   "license": "proprietary",
   "authors": [
@@ -17,9 +17,17 @@
       "App\\": "app/"
     },
     "files": [
-      "app/Config.php"
+      "app/Config.php",
+      "app/Helpers.php"
     ]
   },
   "require": {
+    "coffeecode/router": "1.0.*",
+    "coffeecode/optimizer": "2.0.*",
+    "matthiasmullie/minify": "1.3.*",
+    "coffeecode/datalayer": "^1.1",
+    "league/plates": "^3.4",
+    "ext-pdo": "*",
+    "ext-json": "*"
   }
 }
