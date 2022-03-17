@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Support;
+namespace Source\Support;
 
 class Painel
 {

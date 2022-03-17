@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Controllers;
+namespace Source\Controllers;
 use CoffeeCode\Optimizer\Optimizer;
 use CoffeeCode\Router\Router;
 use League\Plates\Engine;

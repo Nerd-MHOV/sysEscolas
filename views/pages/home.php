@@ -91,23 +91,23 @@
         </div>
         <table>
             <tr>
-                <td><div class="imgBx"><img src="<?=INCLUDE_PATH?>public/img/img.jpg" alt=""></div></td>
+                <td><div class="imgBx"><img src="<?=site()?>public/img/img.jpg" alt=""></div></td>
                 <td><h4>Matheus</h4><span>Brazilian</span></td>
             </tr>
             <tr>
-                <td><div class="imgBx"><img src="<?=INCLUDE_PATH?>public/img/img.jpg" alt=""></div></td>
+                <td><div class="imgBx"><img src="<?=site()?>public/img/img.jpg" alt=""></div></td>
                 <td><h4>Matheus</h4><span>Brazilian</span></td>
             </tr>
             <tr>
-                <td><div class="imgBx"><img src="<?=INCLUDE_PATH?>public/img/img.jpg" alt=""></div></td>
+                <td><div class="imgBx"><img src="<?=site()?>public/img/img.jpg" alt=""></div></td>
                 <td><h4>Matheus</h4><span>Brazilian</span></td>
             </tr>
             <tr>
-                <td><div class="imgBx"><img src="<?=INCLUDE_PATH?>public/img/img.jpg" alt=""></div></td>
+                <td><div class="imgBx"><img src="<?=site()?>public/img/img.jpg" alt=""></div></td>
                 <td><h4>Matheus</h4><span>Brazilian</span></td>
             </tr>
             <tr>
-                <td><div class="imgBx"><img src="<?=INCLUDE_PATH?>public/img/img.jpg" alt=""></div></td>
+                <td><div class="imgBx"><img src="<?=site()?>public/img/img.jpg" alt=""></div></td>
                 <td><h4>Matheus</h4><span>Brazilian</span></td>
             </tr>
         </table>

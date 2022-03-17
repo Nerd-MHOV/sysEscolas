@@ -2,25 +2,20 @@
 ob_start();
 session_start();
 require __DIR__.'/vendor/autoload.php';
-use App\Support\Painel;
+use Source\Support\Painel;
 use CoffeeCode\Router\Router;
-/*
-if(Painel::logado() == false){
-    include('pages/login.php');
-    die();
-}
-*/
+use Source\Controllers\Web;
+
 $router = new Router(site());
-$router->namespace("App/Controllers");
+$router->namespace("Source\Controllers");
 
 /**
 * HOME WEB
 */
 $router->group(null);
-$router->get("/","Web:home","web:home");
-$router->get("/home","Web:home","web:home");
+$router->get("/","Web:home", "web:home");
 $router->get("/escolas","Web:escolas","web:escolas");
-$router->get("/eventos","Web:home","web:home");
+$router->get("/eventos","Web:eventos","web:eventos");
 
 /**
  * ERRORS
@@ -33,8 +28,15 @@ $router->get('/{errcode}', "Web:error", "web:error");
  */
 $router->dispatch();
 
-if($router->error()){
-    $router->redirect("web.error", ["errcode" => $router->error()]);
+if ($router->error()) {
+    $router->redirect("/ops/{$router->error()}");
 }
 
 ob_end_flush();
+
+/*
+if(Painel::logado() == false){
+    include('pages/login.php');
+    die();
+}
+*/

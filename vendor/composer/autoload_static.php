@@ -7,11 +7,15 @@ namespace Composer\Autoload;
 class ComposerStaticInitadd96686bc2265a2ce28b706a0c7429d
 {
     public static $files = array (
-        '4c3a006825742ac9efd4294b7c47931b' => __DIR__ . '/../..' . '/app/Config.php',
-        'bf93043adb47b4553aab98990900bc48' => __DIR__ . '/../..' . '/app/Helpers.php',
+        '4eba73787d11c29a34e97251c41a7eab' => __DIR__ . '/../..' . '/source/Config.php',
+        '7272820bd40bda47d8866786a1fe99d7' => __DIR__ . '/../..' . '/source/Helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
+        'S' => 
+        array (
+            'Source\\' => 7,
+        ),
         'M' => 
         array (
             'MatthiasMullie\\PathConverter\\' => 29,
@@ -27,13 +31,13 @@ class ComposerStaticInitadd96686bc2265a2ce28b706a0c7429d
             'CoffeeCode\\Optimizer\\' => 21,
             'CoffeeCode\\DataLayer\\' => 21,
         ),
-        'A' => 
-        array (
-            'App\\' => 4,
-        ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Source\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/source',
+        ),
         'MatthiasMullie\\PathConverter\\' => 
         array (
             0 => __DIR__ . '/..' . '/matthiasmullie/path-converter/src',
@@ -57,10 +61,6 @@ class ComposerStaticInitadd96686bc2265a2ce28b706a0c7429d
         'CoffeeCode\\DataLayer\\' => 
         array (
             0 => __DIR__ . '/..' . '/coffeecode/datalayer/src',
-        ),
-        'App\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
         ),
     );
 
