@@ -13,7 +13,7 @@
 		if(isset($_POST['ação'])){
 			$user = $_POST['user'];
 			$password = $_POST['password'];
-			$sql = App\Support\MySql::connect()->prepare("SELECT * FROM `tb_admin.users` WHERE login = ? AND senha = ?");
+			$sql = App\Support\MySql::connect()->prepare("SELECT * FROM usersAdmin WHERE login = ? AND senha = ?");
 			$sql->execute(array($user,$password));
 			if($sql->rowCount() == 1){
 				$info = $sql->fetch();

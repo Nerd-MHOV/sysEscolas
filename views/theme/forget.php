@@ -1,4 +1,4 @@
-<?php $v->layout("theme/_theme"); ?>
+<?php $this->layout("theme/_theme"); ?>
 
 <div class="main_content_box">
     <div class="login">
@@ -24,6 +24,6 @@
     </div>
 </div>
 
-<?php $v->start("scripts"); ?>
+<?php $this->start("scripts"); ?>
 <script src="<?= asset("/js/form.js"); ?>"></script>
-<?php $v->end(); ?>
+<?php $this->end(); ?>

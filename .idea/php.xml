@@ -9,6 +9,7 @@
       <path value="$PROJECT_DIR$/vendor/matthiasmullie/path-converter" />
       <path value="$PROJECT_DIR$/vendor/coffeecode/datalayer" />
       <path value="$PROJECT_DIR$/vendor/league/plates" />
+      <path value="$PROJECT_DIR$/vendor/phpmailer/phpmailer" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />

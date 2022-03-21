@@ -16,6 +16,10 @@ class ComposerStaticInitadd96686bc2265a2ce28b706a0c7429d
         array (
             'Source\\' => 7,
         ),
+        'P' => 
+        array (
+            'PHPMailer\\PHPMailer\\' => 20,
+        ),
         'M' => 
         array (
             'MatthiasMullie\\PathConverter\\' => 29,
@@ -37,6 +41,10 @@ class ComposerStaticInitadd96686bc2265a2ce28b706a0c7429d
         'Source\\' => 
         array (
             0 => __DIR__ . '/../..' . '/source',
+        ),
+        'PHPMailer\\PHPMailer\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/phpmailer/phpmailer/src',
         ),
         'MatthiasMullie\\PathConverter\\' => 
         array (

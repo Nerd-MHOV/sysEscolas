@@ -34,3 +34,12 @@ const DATA_LAYER_CONFIG = [
         PDO::ATTR_CASE => PDO::CASE_NATURAL
     ]
 ];
+
+const MAIL = [
+    "host" => "smtp.sendgrid.net",
+    "port" => "587",
+    "user" => "apikey",
+    "passwd" => "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",
+    "from_name" => "MatheusHenrique",
+    "from_email" => "matheus.henrique4245@gmail.com"
+];

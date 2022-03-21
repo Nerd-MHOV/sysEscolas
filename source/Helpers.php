@@ -22,13 +22,20 @@ function routeImage(string $imageUrl): string
     return "https://via.placeholder.com/1200x628/0984e3/FFFFFF?text={$imageUrl}";
 }
 
+
 /**
  * @param string $path
+ * @param bool $time
  * @return string
  */
-function puclic(string $path): string
+function asset(string $path, $time = true): string
 {
-    return SITE["root"]."/views/public/{$path}";
+    $file = SITE["root"]."/views/assets/{$path}";
+    $fileOnDir = dirname(__DIR__, 1)."/views/assets/{$path}";
+    if($time && file_exists($fileOnDir)) {
+        $file .= "?time=".filemtime($fileOnDir);
+    }
+    return $file;
 }
 
 /**
@@ -41,7 +48,7 @@ function flash(string $type = null, string $message = null): ?string
     if($type && $message){
         $_SESSION["flash"] = [
           "type" => $type,
-          "messagem" => $message
+          "message" => $message
         ];
         return null;
     }
